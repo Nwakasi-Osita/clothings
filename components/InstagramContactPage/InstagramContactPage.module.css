@@ -1,0 +1,116 @@
+.instagramContactContainer {
+  display: grid;
+  margin-top: 100px;
+  gap: 40px;
+  background-color: #f4f4f5;
+}
+@media screen and (min-width: 768px) {
+  .instagramContactContainer .instagramContactContainer {
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.titleText {
+  color: var(--Dark, #000);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.webDetails {
+  align-items: center;
+  display: grid;
+  margin: auto;
+  max-width: 1280px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  gap: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .webDetails {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.webContainer {
+  position: relative;
+  overflow: hidden;
+  height: 97.4%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  color: #e0e2db;
+}
+
+.webContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imgText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.imgText .fa-brands {
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.webContainer:hover img {
+  opacity: 0.4;
+}
+
+.webContainer:hover .imgText {
+  opacity: 1;
+}
+
+.subscriberText {
+  color: var(--Dark, #000);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: " Roboto";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.customerInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.customerEmailContainer #email {
+  background-color: #f4f4f5;
+  border-top: 0;
+  font-size: 29px;
+  border-left: 0;
+  border-right: 0;
+  width: 643px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.customerSubmitContainer h2 {
+  border-bottom: 2px solid #000;
+}
+.customerSubmitContainer a {
+  text-decoration: none;
+  color: var(--Dark, #000);
+  border-bottom: #000;
+}

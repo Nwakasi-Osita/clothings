@@ -1,0 +1,57 @@
+$mediumSize: 10px 26px 10px 26px;
+$buttonColor: #1e2832;
+$buttonPrimaryColor: #fff;
+
+.button {
+  border: none;
+  cursor: pointer;
+  padding: $mediumSize;
+  background-color: $buttonColor;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    background-color: #d05e44;
+  }
+
+  &.secondary {
+    background-color: $buttonColor;
+    color: #fff;
+
+    &:hover {
+      opacity: 0.9;
+      background-color: #d05e44;
+    }
+  }
+
+  &.primary {
+    background-color: $buttonPrimaryColor;
+    color: #000;
+
+    &:hover {
+      opacity: 0.9;
+      background-color: #d05e44;
+    }
+  }
+
+  &.sm {
+    padding: 10px 15px;
+  }
+
+  &.md {
+    padding: $mediumSize;
+  }
+
+  &.l {
+    padding: 14px 28px;
+  }
+
+  &.xl {
+    padding: 19px 26px;
+  }
+}

@@ -1,0 +1,135 @@
+.nav {
+  background-color: #f4f4f5;
+
+  .topNav {
+    display: flex;
+    justify-content: space-between;
+    color: #1e2832;
+    // display: grid;
+    // padding: 3px;
+    // flex: 0 0 auto;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    // justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      // display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      padding: 3px;
+      // justify-content: center;
+      // padding: 0 250px;
+      justify-content: space- space-between;
+    }
+  }
+  .topNav a {
+    text-decoration: none;
+    color: #1e2832;
+  }
+
+  .companyName img {
+    padding: 0px 7px;
+    h2 {
+      font-size: 45px;
+    }
+  }
+
+  .accountAndShoppingSection {
+    display: flex;
+    // @media screen and (min-width: 768px) {
+    //   display: flex;
+    // }
+  }
+  .shoppingSection a {
+    align-items: center;
+    display: flex;
+
+    h3 {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
+  .shoppingSection {
+    display: flex;
+    font-size: 15px;
+    padding: 0 7px;
+    @media screen and (min-width: 768px) {
+      padding: 0 15px;
+    }
+    img {
+      padding: 0px 5px;
+    }
+  }
+
+  .underline {
+    background-color: #1e2832;
+    justify-content: center;
+    margin: 0px 310px;
+    height: 1.6px;
+    opacity: 20%;
+  }
+
+  .bottomNav {
+    //   display: ;
+    //   gap: 25px;
+    //   text-align: center;
+    //   align-items: center;
+    //   justify-content: center;
+    //   padding: 5px;
+    //   a {
+    //     text-decoration: none;
+    //     color: #1e2832;
+    //     padding: 0 3px;
+    //   }
+
+    .menuBtn {
+      padding: 5px;
+      border: 2px solid #000;
+      cursor: pointer;
+      align-self: center;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      height: 5px;
+      width: 35px;
+      background-color: red;
+      margin: 5px 0;
+      transition: transform 1s ease;
+    }
+
+    .turn .bar1 {
+      transform: rotate(-45deg) translate(-7px, 6px);
+    }
+
+    .turn .bar2 {
+      opacity: 0;
+    }
+
+    .turn .bar3 {
+      transform: rotate(45deg) translate(-7px, -8px);
+    }
+    a {
+      text-decoration: none;
+      color: #1e2832;
+      padding: 0 3px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 37px;
+      // text-align: center;
+      // align-items: center;
+      justify-content: space-between;
+      // padding: 5px;
+
+      .menuBtn {
+        display: none;
+      }
+    }
+  }
+}

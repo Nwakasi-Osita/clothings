@@ -1,0 +1,211 @@
+@media screen and (min-width: 768px) {
+  .puchaseSection {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.BestSeller {
+  margin-top: 100px;
+}
+
+.BestSellerSection {
+  align-items: center;
+}
+
+.BestSellerTitle {
+  text-align: center;
+  font-size: 34px;
+}
+
+.itemNavigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.itemNavigator ul {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+.itemNavigator ul a {
+  color: var(--Dark-50, rgba(0, 0, 0, 0.5));
+  font-feature-settings: "clig" off, "liga" off;
+  /* H6 */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.itemNavigator ul a h3 {
+  color: #000;
+}
+
+.filterSection button {
+  font-size: 16px;
+}
+
+.puchaseSection {
+  display: grid;
+  margin: auto;
+  max-width: 1280px;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.exploreSectionText {
+  position: relative;
+  overflow: hidden;
+}
+
+.exploreSectionText img {
+  width: 100%;
+  min-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.productOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: -80px;
+  background: #1e2832;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.productOverlay a {
+  color: #f5f5f5;
+  display: flex;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.exploreSectionText:hover .productOverlay {
+  margin-bottom: 120px;
+}
+
+.itemName {
+  text-align: start;
+  padding: 0 7px;
+}
+.itemName h4 {
+  text-align: start;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.itemDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 7px;
+}
+.itemDetails h4 {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.secondBestSeller {
+  margin-top: 100px;
+}
+
+.puchaseSecondSection {
+  display: grid;
+  margin: auto;
+  max-width: 1280px;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .puchaseSecondSection {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.secondBestSellerTitle {
+  text-align: center;
+  font-size: 34px;
+  margin: 0;
+}
+
+.seconditemNavigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.seconditemNavigator ul {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+.seconditemNavigator ul a {
+  color: var(--Dark-50, rgba(0, 0, 0, 0.5));
+  font-feature-settings: "clig" off, "liga" off;
+  /* H6 */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.seconditemNavigator ul a h3 {
+  color: #000;
+}
+.seconditemNavigator ul h4 {
+  padding: 0px 5px;
+}
+
+.ShowAllSection button {
+  font-size: 16px;
+}
+
+.itemType {
+  display: flex;
+  gap: 7px;
+}
+
+.itemType .fa-regular {
+  color: red;
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 60px;
+  transition: transform 0.5s ease-in, bckground 0.5s ease, color 0.5s ease;
+}
+
+.itemType .fa-duotone:hover {
+  transform: scale(0.7);
+  background: #2b98f0;
+  color: #f5f5f5;
+}

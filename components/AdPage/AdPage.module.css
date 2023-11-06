@@ -1,0 +1,129 @@
+@media screen and (min-width: 768px) {
+  .puchaseSection {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.AdPageSection {
+  align-items: center;
+  display: grid;
+  margin: auto;
+  max-width: 1280px;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .AdPageSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.sideBar {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 30px auto;
+}
+
+.sideBarexploreSectionText {
+  position: relative;
+}
+.sideBarexploreSectionText h2 {
+  font-size: 30px;
+  font-style: normal;
+  text-wrap: nowrap;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 42px);
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: 0;
+}
+
+.sideBarexploreSectionImg {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.sideBarexploreSectionImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  height: 100%;
+}
+
+.sideBarProductOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: -80px;
+  background: #1e2832;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.sideBarProductOverlay a {
+  color: #f5f5f5;
+  display: flex;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.sideBarexploreSectionImg:hover .sideBarProductOverlay {
+  margin-bottom: 0;
+}
+
+.AdPageExploreSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  color: #fff;
+}
+.AdPageExploreSection img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.exploreSectionText {
+  position: relative;
+  overflow: hidden;
+}
+
+.exploreSectionText img {
+  width: 100%;
+  min-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.productOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: -80px;
+  background: #1e2832;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.productOverlay a {
+  color: #f5f5f5;
+  display: flex;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.exploreSectionText:hover .productOverlay {
+  margin-bottom: 0;
+}

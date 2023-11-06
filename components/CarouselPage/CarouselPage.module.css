@@ -1,0 +1,53 @@
+.carouselSection {
+  background: black url("../../public/image/zara bck pic.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 10%;
+  height: 595px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.carouselImageContainer {
+  width: 700px;
+  position: absolute;
+  right: -10px;
+  top: 32px;
+}
+.carouselImageContainer img {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.carouselDetails {
+  color: #fff;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carouselDetails p {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+.carouselDetailLinkContainer {
+  display: inline-flex;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+}
+.carouselDetailLinkContainer button {
+  font-size: 29px;
+}

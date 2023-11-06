@@ -1,0 +1,101 @@
+.nav {
+  background-color: #f4f4f5;
+}
+.nav .topNav {
+  display: flex;
+  justify-content: space-between;
+  color: #1e2832;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .nav .topNav {
+    padding: 3px;
+    justify-content: space- space-between;
+  }
+}
+.nav .topNav a {
+  text-decoration: none;
+  color: #1e2832;
+}
+.nav .companyName img {
+  padding: 0px 7px;
+}
+.nav .companyName img h2 {
+  font-size: 45px;
+}
+.nav .accountAndShoppingSection {
+  display: flex;
+}
+.nav .shoppingSection a {
+  align-items: center;
+  display: flex;
+}
+.nav .shoppingSection a h3 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav .shoppingSection a h3 {
+    display: block;
+  }
+}
+.nav .shoppingSection {
+  display: flex;
+  font-size: 15px;
+  padding: 0 7px;
+}
+@media screen and (min-width: 768px) {
+  .nav .shoppingSection {
+    padding: 0 15px;
+  }
+}
+.nav .shoppingSection img {
+  padding: 0px 5px;
+}
+.nav .underline {
+  background-color: #1e2832;
+  justify-content: center;
+  margin: 0px 310px;
+  height: 1.6px;
+  opacity: 20%;
+}
+.nav .bottomNav .menuBtn {
+  padding: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  align-self: center;
+}
+.nav .bottomNav .bar1,
+.nav .bottomNav .bar2,
+.nav .bottomNav .bar3 {
+  height: 5px;
+  width: 35px;
+  background-color: red;
+  margin: 5px 0;
+  transition: transform 1s ease;
+}
+.nav .bottomNav .turn .bar1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+.nav .bottomNav .turn .bar2 {
+  opacity: 0;
+}
+.nav .bottomNav .turn .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+.nav .bottomNav a {
+  text-decoration: none;
+  color: #1e2832;
+  padding: 0 3px;
+}
+@media screen and (min-width: 768px) {
+  .nav .bottomNav {
+    display: flex;
+    gap: 37px;
+    justify-content: space-between;
+  }
+  .nav .bottomNav .menuBtn {
+    display: none;
+  }
+}

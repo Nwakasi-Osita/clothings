@@ -1,0 +1,102 @@
+.FooterSectionContainer {
+  display: grid;
+
+  column-gap: 100px;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+  ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .FooterSectionContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.companyFooterDetailSectionContainer h3 {
+  font-size: 20px;
+
+  p {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+}
+
+.companyContactIconSectionContainer ul {
+  display: flex;
+  gap: 7px;
+}
+
+.companyContactIconSectionContainer ul {
+  list-style: none;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.itemCatalogSectionContainer ul {
+  list-style: none;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.itemCatalogSectionContainer ul li a {
+  text-decoration: none;
+  align-items: flex-start;
+}
+
+.aboutCompanySectionContainer ul {
+  list-style: none;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutCompanySectionContainer ul li a {
+  text-decoration: none;
+  align-items: flex-start;
+}
+
+.paymentMethodContainer {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 10px;
+
+  background-color: rgb(5, 5, 55);
+}
+
+.paymentMethodSection {
+  display: flex;
+
+  a {
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  img {
+    width: 100px;
+    object-fit: cover;
+  }
+}

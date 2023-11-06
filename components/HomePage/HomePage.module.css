@@ -1,0 +1,65 @@
+.HomePageSection {
+  background-color: #f4f4f5;
+  display: grid;
+  align-items: center;
+}
+
+.heroSection {
+  display: grid;
+  padding: 0;
+}
+.heroSection .heroImage img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 424px;
+  height: 542px;
+  background-color: #ffffff;
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+@media screen and (min-width: 768px) {
+  .heroSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heroSection .heroImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.heroText {
+  color: #1e2832;
+  padding-left: 294px;
+}
+.heroText h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 55px;
+  text-transform: capitalize;
+}
+.heroText P {
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px;
+  text-transform: capitalize;
+}
+.heroText a {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.heroText .heroImage img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

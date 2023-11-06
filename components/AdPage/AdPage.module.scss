@@ -1,0 +1,94 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.AdPageSection {
+  align-items: center;
+  display: grid;
+  margin: auto;
+  max-width: 1280px;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .AdPageSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sideBar {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 30px auto;
+}
+
+.sideBarexploreSectionText {
+  position: relative;
+
+  h2 {
+    font-size: 30px;
+    font-style: normal;
+    text-wrap: nowrap;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 42px);
+    transform: rotate(-90deg) translateX(-50%);
+    transform-origin: 0;
+  }
+}
+
+.sideBarexploreSectionImg {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.sideBarexploreSectionImg img {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  height: 100%;
+}
+
+.sideBarProductOverlay {
+  @include productOverlayDesignPattern;
+}
+
+.sideBarexploreSectionImg:hover .sideBarProductOverlay {
+  margin-bottom: 0;
+}
+
+.AdPageExploreSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  color: #fff;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.exploreSectionText {
+  position: relative;
+  overflow: hidden;
+}
+
+.exploreSectionText img {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.productOverlay {
+  @include productOverlayDesignPattern;
+}
+
+.exploreSectionText:hover .productOverlay {
+  margin-bottom: 0;
+}
