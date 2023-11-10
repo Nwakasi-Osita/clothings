@@ -1,12 +1,19 @@
 .HomePageSection {
-  background-color: #f4f4f5;
   display: grid;
   align-items: center;
 }
 
 .heroSection {
-  display: grid;
+  display: block;
+  justify-content: center;
   padding: 0;
+  background-color: #f4f4f5;
+}
+.heroSection .heroImage {
+  padding-left: 30%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 .heroSection .heroImage img {
   width: 100%;
@@ -18,22 +25,11 @@
   border-top-left-radius: 40%;
   border-bottom-right-radius: 40%;
 }
-@media screen and (min-width: 768px) {
-  .heroSection {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .heroSection .heroImage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.heroText {
+.heroSection .heroText {
   color: #1e2832;
-  padding-left: 294px;
+  padding-right: 20%;
 }
-.heroText h2 {
+.heroSection .heroText h2 {
   font-family: "Roboto", sans-serif;
   font-size: 74px;
   font-style: normal;
@@ -41,7 +37,7 @@
   line-height: 55px;
   text-transform: capitalize;
 }
-.heroText P {
+.heroSection .heroText P {
   font-family: Roboto;
   font-size: 30px;
   font-style: normal;
@@ -49,7 +45,7 @@
   line-height: 55px;
   text-transform: capitalize;
 }
-.heroText a {
+.heroSection .heroText a {
   font-family: "Roboto";
   font-size: 30px;
   font-style: normal;
@@ -58,8 +54,21 @@
   text-transform: capitalize;
   text-decoration: none;
 }
-.heroText .heroImage img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+@media screen and (min-width: 768px) {
+  .heroSection {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heroSection .heroImage {
+    padding-left: 0;
+    display: flex;
+    padding-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroSection .heroText {
+    padding-right: 0;
+    padding-left: 294px;
+  }
 }

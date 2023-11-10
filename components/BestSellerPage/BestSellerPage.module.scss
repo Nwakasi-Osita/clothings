@@ -2,7 +2,10 @@
 @import "../../styles/mixins";
 
 .BestSeller {
-  margin-top: 100px;
+  margin-top: 50px;
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+  }
 }
 
 .BestSellerSection {
@@ -11,7 +14,10 @@
 
 .BestSellerTitle {
   text-align: center;
-  font-size: 34px;
+  font-size: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
 }
 
 .itemNavigator {
@@ -26,8 +32,15 @@
 }
 
 .filterSection {
+  padding-right: 15px;
   button {
     font-size: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+    button {
+      font-size: 16px;
+    }
   }
 }
 
@@ -74,12 +87,16 @@
 }
 
 .secondBestSeller {
-  margin-top: 100px;
+  margin-top: 50px;
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+  }
 }
 
 .puchaseSecondSection {
   display: grid;
-  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  // margin: auto;
   max-width: 1280px;
   gap: 20px;
   text-align: center;
@@ -94,8 +111,11 @@
 
 .secondBestSellerTitle {
   text-align: center;
-  font-size: 34px;
-  margin: 0;
+  font-size: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
 }
 
 .seconditemNavigator {
@@ -112,7 +132,15 @@
   }
 }
 
-.ShowAllSection {
+.secondShowAllSection {
+  padding-right: 15px;
+  button {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+  }
   button {
     font-size: 16px;
   }
@@ -130,10 +158,4 @@
   border-radius: 50px;
   font-size: 60px;
   transition: transform 0.5s ease-in, bckground 0.5s ease, color 0.5s ease;
-}
-
-.itemType .fa-duotone:hover {
-  transform: scale(0.7);
-  background: #2b98f0;
-  color: #f5f5f5;
 }

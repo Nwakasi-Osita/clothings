@@ -3,7 +3,8 @@
 
 .AdPageSection {
   align-items: center;
-  display: grid;
+  padding-top: 20px;
+  display: block;
   margin: auto;
   max-width: 1280px;
   gap: 20px;
@@ -13,6 +14,7 @@
 
 @media screen and (min-width: 768px) {
   .AdPageSection {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -21,6 +23,11 @@
   height: 100%;
   display: grid;
   grid-template-columns: 30px auto;
+  padding: 5px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .sideBarexploreSectionText {
@@ -64,12 +71,17 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-
+  padding: 10px;
   color: #fff;
 
   img {
     object-fit: cover;
     width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    gap: 20px;
   }
 }
 

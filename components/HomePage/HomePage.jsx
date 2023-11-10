@@ -31,12 +31,12 @@ export default function HomePage() {
             <img src="image/hero pic.png" />
           </div>
         </div>
+        <BrandPage />
+        <AdPage />
+        <BestSeller />
+        <InstagramContact />
+        <Footer />
       </div>
-      <BrandPage />
-      <AdPage />
-      <BestSeller />
-      <InstagramContact />
-      <Footer />
       {/* </div> */}
     </>
   );

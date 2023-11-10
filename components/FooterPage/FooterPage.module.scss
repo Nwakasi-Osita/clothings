@@ -1,7 +1,12 @@
 .FooterSectionContainer {
   display: grid;
-
-  column-gap: 100px;
+  margin-top: 50px;
+  margin: auto;
+  column-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  padding: 0 30px;
 
   a {
     color: #000;
@@ -26,15 +31,14 @@
 @media screen and (min-width: 768px) {
   .FooterSectionContainer {
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+    column-gap: 100px;
   }
 }
 
-.companyFooterDetailSectionContainer h3 {
-  font-size: 20px;
-
-  p {
-    font-family: Open Sans;
-    font-size: 16px;
+.companyFooterDetailSectionContainer {
+  .sectionName {
+    font-size: 34px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -42,9 +46,19 @@
   }
 }
 
+.companyDetailContainer {
+  font-family: Open Sans;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .companyContactIconSectionContainer ul {
   display: flex;
-  gap: 7px;
+  column-gap: 20px;
 }
 
 .companyContactIconSectionContainer ul {

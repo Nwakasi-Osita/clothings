@@ -1,21 +1,26 @@
-// .brand {
-//   display: grid;
-//   grid-template-columns: repeat(5, 1fr);
-//   text-align: center;
-//   color: #1e2832;
-//   gap: 5px;
-//   // grid-template-rows: auto auto 1fr auto;
-//   align-items: center;
-//   // justify-content: center;
-//   // padding: 3px;
-// }
-
 .brand {
-  // background-image: url("../../public/image/zara bck text.png");
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding: 5% 0;
-  gap: 4.5%;
+
+  a {
+    text-decoration: none;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 5% 0;
+    gap: 4.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    gap: 4.5%;
+  }
 }

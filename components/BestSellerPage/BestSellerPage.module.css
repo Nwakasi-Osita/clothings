@@ -1,10 +1,10 @@
-@media screen and (min-width: 768px) {
-  .puchaseSection {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 .BestSeller {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .BestSeller {
+    margin-top: 100px;
+  }
 }
 
 .BestSellerSection {
@@ -13,7 +13,12 @@
 
 .BestSellerTitle {
   text-align: center;
-  font-size: 34px;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .BestSellerTitle {
+    font-size: 34px;
+  }
 }
 
 .itemNavigator {
@@ -46,18 +51,42 @@
 .itemNavigator ul a h3 {
   color: #000;
 }
+@media screen and (min-width: 768px) {
+  .itemNavigator ul {
+    justify-content: space-between;
+  }
+}
 
+.filterSection {
+  padding-right: 15px;
+}
 .filterSection button {
   font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .filterSection {
+    padding-right: 0;
+  }
+  .filterSection button {
+    font-size: 16px;
+  }
 }
 
 .puchaseSection {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: auto;
   max-width: 1280px;
-  gap: 20px;
+  gap: 10px;
   text-align: center;
+  background-color: #fff;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .puchaseSection {
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .exploreSectionText {
@@ -129,12 +158,17 @@
 }
 
 .secondBestSeller {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .secondBestSeller {
+    margin-top: 100px;
+  }
 }
 
 .puchaseSecondSection {
   display: grid;
-  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
   max-width: 1280px;
   gap: 20px;
   text-align: center;
@@ -148,8 +182,12 @@
 }
 .secondBestSellerTitle {
   text-align: center;
-  font-size: 34px;
-  margin: 0;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .secondBestSellerTitle {
+    font-size: 34px;
+  }
 }
 
 .seconditemNavigator {
@@ -182,11 +220,27 @@
 .seconditemNavigator ul a h3 {
   color: #000;
 }
+@media screen and (min-width: 768px) {
+  .seconditemNavigator ul {
+    justify-content: space-between;
+  }
+}
 .seconditemNavigator ul h4 {
   padding: 0px 5px;
 }
 
-.ShowAllSection button {
+.secondShowAllSection {
+  padding-right: 15px;
+}
+.secondShowAllSection button {
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  .secondShowAllSection {
+    padding-right: 0;
+  }
+}
+.secondShowAllSection button {
   font-size: 16px;
 }
 
@@ -202,10 +256,4 @@
   border-radius: 50px;
   font-size: 60px;
   transition: transform 0.5s ease-in, bckground 0.5s ease, color 0.5s ease;
-}
-
-.itemType .fa-duotone:hover {
-  transform: scale(0.7);
-  background: #2b98f0;
-  color: #f5f5f5;
 }

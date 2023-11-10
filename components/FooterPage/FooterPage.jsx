@@ -13,7 +13,7 @@ export default function Footer() {
             <h3 className={styles.sectionName}>
               <img src="image/nav.png" /> NAVITI <img src="image/nav.png" />
             </h3>
-            <div className={styles.companyFooterDetailSectionContainer}>
+            <div className={styles.companyDetailContainer}>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua

@@ -48,14 +48,10 @@ export default function BestSeller() {
                 <div className={styles.filterSection}>
                   <a href="">
                     <Button type={"secondary"} size={"sm"}>
-                      {/* <h4> */} <img src="image/filter icon.png" /> Filter
-                      {/* </h4> */}
+                      <img src="image/filter icon.png" /> Filter
                     </Button>{" "}
                   </a>
                 </div>
-                {/* <div className={styles}>
-                 
-                </div> */}
               </div>
 
               <div className={styles.puchaseSection}>
@@ -386,7 +382,7 @@ export default function BestSeller() {
               </div>
               <div className={styles.secondShowAllSection}>
                 <a href="">
-                  <Button type={"secondary"} size={"sm"}>
+                  <Button type={"secondary"} size={"sm"} onclick="myFunction()">
                     Show all
                   </Button>{" "}
                 </a>

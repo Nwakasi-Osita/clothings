@@ -3,20 +3,17 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { Inter } from "next/font/google";
-import Hamburger from "../Hamburger/Hamburger";
-
-import { Container } from "../Container/Container";
 
 export default function Nav() {
-  // const [isOpen, setIsOpen] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-  // const handleSideMenuChange = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  const handleMenuBtnClick = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
     <>
-      <Container className={styles.nav}>
+      <div className={styles.nav}>
         <div className={styles.topNav}>
           <div className={styles.searchLink}>
             <a href="">
@@ -53,40 +50,44 @@ export default function Nav() {
 
         <div className={styles.bottomNav}>
           <div className={styles.navTop}>
-            <div className={styles.menuBtn}>
+            <button className={styles.menuBtn} onClick={handleMenuBtnClick}>
               <div className={styles.bar1}></div>
               <div className={styles.bar2}></div>
               <div className={styles.bar3}></div>
-            </div>
+            </button>
           </div>
-          <a href="">
-            <h3> Jewelry & Accessories</h3>
-          </a>
 
-          <a href="">
-            <h3> Clothing & Shoes</h3>
-          </a>
+          <div
+            className={`${styles.menuLinks} ${
+              showMenu ? styles.showMenuLinks : ""
+            }`}
+          >
+            <a href="">
+              <h3> Jewelry & Accessories</h3>
+            </a>
 
-          <a href="">
-            <h3>Home & Living</h3>
-          </a>
-          <a href="">
-            <h3>Wedding & Party</h3>
-          </a>
-          <a href="">
-            <h3>Toys & Entertainment</h3>
-          </a>
-          <a href="">
-            <h3>Art & Collectibles</h3>
-          </a>
-          <a href="">
-            <h3>Craft Supplies & Tools</h3>
-          </a>
+            <a href="">
+              <h3> Clothing & Shoes</h3>
+            </a>
+
+            <a href="">
+              <h3>Home & Living</h3>
+            </a>
+            <a href="">
+              <h3>Wedding & Party</h3>
+            </a>
+            <a href="">
+              <h3>Toys & Entertainment</h3>
+            </a>
+            <a href="">
+              <h3>Art & Collectibles</h3>
+            </a>
+            <a href="">
+              <h3>Craft Supplies & Tools</h3>
+            </a>
+          </div>
         </div>
-      </Container>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-      <script src="script.js"></script>
+      </div>
     </>
   );
 }
