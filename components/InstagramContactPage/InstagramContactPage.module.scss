@@ -125,6 +125,7 @@
 }
 
 .customerSubmitContainer {
+  background-color: #f4f4f5;
   font-size: 17px;
   color: var(--Dark, #000);
   h2 {
@@ -134,11 +135,7 @@
     text-decoration: none;
     color: var(--Dark, #565e65);
   }
-  .customerSubmitUnderline {
-    background-color: red;
-    width: 30px;
-    height: 10px;
-  }
+
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }

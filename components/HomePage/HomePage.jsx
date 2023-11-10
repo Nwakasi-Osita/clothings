@@ -15,20 +15,24 @@ export default function HomePage() {
       {/* <div className={styles.homePage}> */}
       <div className={styles.HomePageSection}>
         {" "}
-        <NavPage />
-        <div className={styles.heroSection}>
-          <div className={styles.heroText}>
-            <h2>Collections</h2>
-            <p>
-              you can explore many differnt collection from various brands here.
-            </p>
-            <Button>
-              {" "}
-              <a href="">Shop Now</a>
-            </Button>
-          </div>
-          <div className={styles.heroImage}>
-            <img src="image/hero pic.png" />
+        <div className={styles.heroContainerSection}>
+          {" "}
+          <NavPage />
+          <div className={styles.heroSection}>
+            <div className={styles.heroText}>
+              <h2>Collections</h2>
+              <p>
+                you can explore many differnt collection from various brands
+                here.
+              </p>
+              <Button>
+                {" "}
+                <a href="">Shop Now</a>
+              </Button>
+            </div>
+            <div className={styles.heroImage}>
+              <img src="image/hero pic.png" />
+            </div>
           </div>
         </div>
         <BrandPage />

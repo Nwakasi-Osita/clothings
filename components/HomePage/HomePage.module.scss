@@ -2,12 +2,14 @@
   display: grid;
   align-items: center;
 }
+.heroContainerSection {
+  background-color: #f4f4f5;
+}
 
 .heroSection {
   display: block;
   justify-content: center;
   padding: 0;
-  background-color: #f4f4f5;
 
   .heroImage {
     padding-left: 30%;

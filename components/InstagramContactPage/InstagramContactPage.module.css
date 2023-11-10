@@ -126,6 +126,7 @@
 }
 
 .customerSubmitContainer {
+  background-color: #f4f4f5;
   font-size: 17px;
   color: var(--Dark, #000);
 }
@@ -135,11 +136,6 @@
 .customerSubmitContainer a {
   text-decoration: none;
   color: var(--Dark, #565e65);
-}
-.customerSubmitContainer .customerSubmitUnderline {
-  background-color: red;
-  width: 30px;
-  height: 10px;
 }
 @media screen and (min-width: 768px) {
   .customerSubmitContainer {

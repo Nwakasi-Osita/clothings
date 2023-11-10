@@ -31,7 +31,7 @@
   position: relative;
 }
 .sideBarexploreSectionText h2 {
-  font-size: 30px;
+  font-size: 16pxpx;
   font-style: normal;
   text-wrap: nowrap;
   z-index: 2;
@@ -40,6 +40,11 @@
   top: calc(50% - 42px);
   transform: rotate(-90deg) translateX(-50%);
   transform-origin: 0;
+}
+@media screen and (min-width: 768px) {
+  .sideBarexploreSectionText h2 {
+    font-size: 30px;
+  }
 }
 
 .sideBarexploreSectionImg {

@@ -3,10 +3,6 @@ import styles from "./InstagramContactPage.module.css";
 import { Container } from "../Container/Container";
 
 {
-  /* <script
-  src="https://kit.fontawesome.com/9b1b30dbc2.js"
-  crossorigin="anonymous"
-></script>; */
 }
 
 <script
@@ -89,7 +85,6 @@ export default function InstagramContact() {
               <a href="">
                 {" "}
                 <h2>Submit</h2>
-                {/* <div className={styles.customerSubmitUnderline}></div> */}
               </a>
             </div>
           </div>
