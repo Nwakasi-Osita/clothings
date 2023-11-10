@@ -101,6 +101,8 @@
 
 .customerInfoContainer {
   display: flex;
+  background-color: #f4f4f5;
+
   justify-content: center;
   gap: 30px;
   @media screen and (min-width: 768px) {
@@ -110,7 +112,6 @@
 
 .customerEmailContainer {
   #email {
-    background-color: #f4f4f5;
     border-top: 0;
     font-size: 19px;
     border-left: 0;
@@ -125,7 +126,7 @@
 }
 
 .customerSubmitContainer {
-  background-color: #f4f4f5;
+  // background-color: #f4f4f5;
   font-size: 17px;
   color: var(--Dark, #000);
   h2 {
