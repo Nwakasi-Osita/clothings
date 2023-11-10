@@ -25,7 +25,12 @@
   padding: 0px 7px;
 }
 .nav .companyName img h2 {
-  font-size: 45px;
+  font-size: 25px;
+}
+@media screen and (min-width: 768px) {
+  .nav .companyName img h2 {
+    font-size: 45px;
+  }
 }
 .nav .accountAndShoppingSection {
   display: flex;
@@ -46,6 +51,11 @@
   display: flex;
   font-size: 15px;
   padding: 0 7px;
+}
+.nav .shoppingSection img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .nav .shoppingSection {
@@ -80,7 +90,7 @@
 .nav .bottomNav .bar3 {
   height: 5px;
   width: 35px;
-  background-color: red;
+  background-color: #1e2832;
   margin: 5px 0;
   transition: transform 1s ease;
 }

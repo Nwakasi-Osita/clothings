@@ -23,7 +23,10 @@
   .companyName img {
     padding: 0px 7px;
     h2 {
-      font-size: 45px;
+      font-size: 25px;
+      @media screen and (min-width: 768px) {
+        font-size: 45px;
+      }
     }
   }
 
@@ -47,6 +50,12 @@
     display: flex;
     font-size: 15px;
     padding: 0 7px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
     @media screen and (min-width: 768px) {
       padding: 0 15px;
     }
@@ -81,7 +90,7 @@
     .bar3 {
       height: 5px;
       width: 35px;
-      background-color: red;
+      background-color: #1e2832;
       margin: 5px 0;
       transition: transform 1s ease;
     }
