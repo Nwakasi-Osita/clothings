@@ -27,8 +27,8 @@
   color: #000;
 }
 .button.primary:hover {
-  opacity: 0.9;
-  background-color: #d05e44;
+  background-color: #000;
+  color: #fff;
 }
 .button.sm {
   padding: 10px 15px;

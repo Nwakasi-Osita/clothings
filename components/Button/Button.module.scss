@@ -34,8 +34,8 @@ $buttonPrimaryColor: #fff;
     color: #000;
 
     &:hover {
-      opacity: 0.9;
-      background-color: #d05e44;
+      background-color: #000;
+      color: $buttonPrimaryColor;
     }
   }
 
