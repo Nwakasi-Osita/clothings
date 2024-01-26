@@ -145,33 +145,8 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-
-      <div className={styles.paymentMethodContainer}>
-        <div className={styles.copyRightContainer}>
-          <h4>&COPY; 2023 , Naviti.com </h4>
-        </div>
-
-        <div className={styles.paymentMethodSection}>
-          <a href="">
-            {" "}
-            <img src="image/visa.png" />
-          </a>
-
-          <a href="">
-            {" "}
-            <img src="image/paypal.jpg" />
-          </a>
-
-          <a href="">
-            {" "}
-            <img src="image/american express.png" />
-          </a>
-        </div>
-
-        <div className={styles.backToTop}>
-          <h3>Scroll to top</h3>
-        </div>
-      </div>
+      <div className={styles.bottomSectionContainer}></div>
+      
     </>
   );
 }

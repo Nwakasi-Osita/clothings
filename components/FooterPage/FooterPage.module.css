@@ -110,3 +110,8 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.bottomSectionContainer {
+  background-color: rgba(0, 0, 0, 0.1058823529);
+  padding: 20px;
+}
